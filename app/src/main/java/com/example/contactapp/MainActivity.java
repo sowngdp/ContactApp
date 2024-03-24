@@ -1,6 +1,7 @@
 package com.example.contactapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         View viewRoot = binding.getRoot();
         setContentView(viewRoot);
+
+        binding.rvContacts.setLayoutManager(new LinearLayoutManager(this));
 
         contactList = new ArrayList<ContactModel>();
 

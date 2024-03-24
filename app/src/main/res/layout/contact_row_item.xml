@@ -25,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
+            android:textColor="@color/black"
             android:layout_gravity="center_vertical"
             android:textSize="20dp"></TextView>
 
